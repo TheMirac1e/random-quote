@@ -11,6 +11,10 @@
 
     &__quote {
         text-align: center;
+
+        i {
+            margin-right: 5px;
+        }
     }
 
     &__author {
@@ -21,5 +25,36 @@
     &__info {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__social-item {
+        align-items: center;
+        background-color: #982394;
+        border-radius: 5px;
+        color: #ffffff;
+        display: flex;
+        font-size: 1.2em;
+        padding: 0;
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    &__random-quote {
+        background-color: #982394;
+        border-radius: 5px;
+        border: transparent;
+        color: #ffffff;
+        height: 40px;
+        outline: none;
+        margin: 0;
+        padding: 5px 10px;
+        cursor: pointer;
     }
 }
