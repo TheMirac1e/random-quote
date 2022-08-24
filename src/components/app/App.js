@@ -1,11 +1,14 @@
-import './App.css';
 import { Component } from "react";
-import Card from "./components/card/card";
+import Card from "../card/card";
+
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-        <Card/>
+        <div className="container">
+          <Card/>
+        </div>
     );
   }
 }
