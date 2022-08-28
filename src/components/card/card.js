@@ -40,7 +40,6 @@ class Card extends Component {
     this.setState({
       randomQuote: this.getRandomQuote(data)
     })
-    this.setRandomColor();
   }
 
   setRandomColor() {
@@ -88,7 +87,10 @@ class Card extends Component {
               <a className={'card-item__social-item'} style={inlineColorStyle} href="https://www.facebook.com/" target={"_blank"}
                  rel='noreferrer'><i className="fa fa-facebook"></i></a>
             </div>
-            <button className={'card-item__random-quote'} style={inlineColorStyle} id="new-quote" type={"button"} onClick={() => this.setRandomQuote(data)}>New
+            <button className={'card-item__random-quote'} style={inlineColorStyle} id="new-quote" type={"button"} onClick={() => {
+              this.setRandomQuote(data);
+              this.setRandomColor()
+            }}>New
               quote
             </button>
           </div>
